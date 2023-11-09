@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+  body{
+    background-color: rgb(255, 223, 223);
+  }
+  .container1 {
+    background-color: rgb(255, 223, 223);
+  }
+  .container2{
+    background-color: rgb(226, 183, 183);
+
+  }
+  .col-md-7{
+    background-color: rgb(207, 152, 152);
+
+  }
+  
+    #id1{
+    color: rgb(206, 84, 104); 
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 28px; 
+            text-align: center; 
+            text-transform: uppercase;
+            letter-spacing: 4px; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+            background-color: aliceblue;
+            border-radius: 15px;
+            padding: auto;
+            
+   }
+  
+  </style>
+<body>
+
+
+  <div class="container1">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <h2 id="id1">Test With Us</h2>
+      </div>
+       <a th:href=@{index}> <button type="button" class="btn btn-primary">home</button></a>
+      </div>
+    </header>
+  </div>
+
+
+<div class="container2">
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom" style="font-family: 'YourFontName'; font-size: 24px; font-weight: bold; color: #333;">About Our Page TEST WITH US</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Introduction:</h3>
+        <p>Welcome to [Your Website Name], your trusted destination for online medical testing and health information. We are committed to providing accurate, convenient, and affordable medical testing services to empower individuals to take control of their health.</p>
+        
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Our Mission:</h3>
+        <p>At [Your Website Name], our mission is to make healthcare accessible to everyone. We believe that knowledge is the first step towards a healthier life, and we strive to deliver high-quality testing services that are reliable, secure, and easy to use.</p>
+        
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Who We Are:</h3>
+        <p>We are a team of dedicated healthcare professionals, medical experts, and technology enthusiasts with a passion for improving healthcare accessibility. With years of experience in the medical field, we are determined to bring the benefits of technology to the world of medical testing</p>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="container3">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">What We Offer: </h2>
+      <p class="lead">1.Comprehensive Testing: We offer a wide range of medical tests, from routine wellness screenings to specific diagnostic tests, all in the comfort of your home.<br><br>
+        2.Accuracy and Reliability: Our testing services are conducted by certified laboratories and healthcare professionals, ensuring the highest level of accuracy.<br><br>
+        3User-Friendly Experience: We've designed our platform with you in mind. Ordering tests, collecting samples, and receiving results are simple and convenient.<br><br>
+        4.Confidentiality: We prioritize your privacy and data security. Your information is kept confidential and secure at all times.</p>
+    </div>
+    <div class="col-md-5">
+      <img th:src="@{/images/about1.jpg}" alt="Image Description" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+    </div>
+  </div>
+
+
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">Why Choose Us: </h2>
+      <p class="lead">1.Expertise: Our team of medical professionals and technologists are dedicated to providing the most accurate and reliable testing services.<br><br>
+        2.Convenience: We understand that your time is valuable. With our online platform, you can take control of your health without leaving your home.<br><br>
+        3.Affordability: Quality healthcare should be accessible to all. We offer competitive prices to ensure that you can afford the tests you need.<br><br></p>
+    </div>
+    <div class="col-md-5">
+      <img th:src="@{/images/about2.jpg}" alt="Image Description" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+    </div>
+  </div>
+
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Get Started Today: </h2>
+      <p class="lead">At TEST WITH US, we understand that your health is important, and we make it easy for you to take control of it. Getting started with our online medical testing is a simple, straightforward process. Follow these steps to begin your journey towards better health:<BR>
+
+        Step 1: Browse Our Tests::
+        Explore our wide range of medical tests and select the one that best suits your needs. We offer a variety of tests, from general wellness assessments to specialized diagnostic tests.<BR>
+        
+        Step 2: Add to Cart::
+        Once you've chosen your test, click "Add to Cart" to start the ordering process. You can select multiple tests if needed, and our user-friendly platform will guide you through the process.<br>
+        
+        Step 3: Provide Your Information::
+        We need some basic information from you to ensure a seamless testing experience. Don't worry; your privacy is our top priority. Your information will be kept confidential and secure.<br>
+        
+        Step 4: Get Your Results::
+        Once your samples are analyzed, your test results will be available to you through our secure online platform. You will be notified when your results are ready for review.<br></p>
+    </div>
+    <div class="col-md-5">
+      <img th:src="@{/images/about3.jpg}" alt="Image Description" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+    </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+      <li ><a th:href=@{orders} class="nav-link px-2">Order</a></li>
+      <li><a th:href=@{test} class="nav-link px-2">Test</a></li>
+      <li><a th:href=@{admin} class="nav-link px-2">Admin</a></li>
+      <li><a th:href=@{about} class="nav-link px-2">About</a></li>
+      </ul>
+    </footer>
+    </div>
+
+
+  <hr class="featurette-divider">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+</body>
+</html>

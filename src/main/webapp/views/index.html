@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Welcome to ExpressTest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <style>
+    .nav col-12 col-md-auto mb-2 justify-content-center mb-md-0,li:hover{
+      background-color: white;
+      
+     
+    }
+    .d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none{
+      background-color: rgb(66, 18, 139)
+     
+;
+    }
+    body{
+      background-color: rgb(255, 223, 223);
+    }
+    
+   .container1{
+    background-color:rgb(255, 223, 223);
+   }
+   #id1{
+    color: rgb(206, 84, 104); 
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 28px; 
+            text-align: center; 
+            text-transform: uppercase;
+            letter-spacing: 4px; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+            background-color: aliceblue;
+            border-radius: 15px;
+            padding: auto;
+            
+   }
+   .container2{
+    background-color:rgb(236, 178, 178);
+   }
+   .container3{
+    background-color:rgb(219, 127, 164);
+   }
+   img.d-block.mx-lg-auto.img-fluid{     
+      border-radius: 10px;
+      width: 900px; 
+      height:400px ;
+      } 
+      .container4{
+        
+       background-color: rgb(248, 117, 170);
+      }
+   </style>
+</head>
+<body >
+  
+  
+  
+    
+  <div class="container1">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <h2 id="id1">Test With Us</h2>
+        </a>
+      </div>
+      
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li ><a th:href=@{orders} class="nav-link px-2">Order</a></li>
+        <li><a th:href=@{test} class="nav-link px-2">Test</a></li>
+        <li><a th:href=@{admin} class="nav-link px-2">Admin</a></li>
+        <li><a th:href=@{about} class="nav-link px-2">About</a></li>
+       
+      </ul>
+
+      <div class="col-md-3 text-end">
+       <a th:href="@{login}"> <button type="button" class="btn btn-outline-primary me-2">Login</button></a>
+       <a th:href=@{signup}> <button type="button" class="btn btn-primary">Sign-up</button></a>
+      </div>
+    </header>
+  </div>
+  
+  <div class="container2">
+   
+    
+  
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img th:src="@{/images/index1.jpg}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="900" height="700" loading="lazy"/>
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Test With Us</h1>
+          <p class="lead">At Test With Us, we are dedicated to providing accurate, convenient, and confidential online diagnosis tests to help individuals take control of their health and well-being. We understand that accessing healthcare can be challenging, and our mission is to bridge the gap between healthcare services and people's busy lives.</p>
+          <div >
+            <button type="button" style="background-color: palevioletred; padding: 4px;">Explore</button>
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+
+
+  <div class="container3">
+  
+    
+  
+    <div class="container px-4 py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom">We Provide</h2>
+  
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">User-Friendly Interface:</h3>
+            <p>Ensure that your website is easy to navigate, with an intuitive user interface. Visitors should be able to find the information and tests they need without any confusion.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Diverse Diagnostic Tests:</h3>
+            <p>Offer a wide range of diagnostic tests covering various health conditions and concerns. These tests could include general health assessments, symptom-specific tests, and disease-specific diagnostics.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Secure Data Handling:</h3>
+            <p>Prioritize data security and privacy. Implement robust encryption and data protection measures to guarantee the confidentiality of user information and test results.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Educational Resources:</h3>
+            <p>Offer a comprehensive resource center with articles, videos, and other educational materials to help users understand their health conditions and make informed decisions.</p>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+    </div>
+  
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+      <li ><a th:href=@{orders} class="nav-link px-2">Order</a></li>
+      <li><a th:href=@{test} class="nav-link px-2">Test</a></li>
+      <li><a th:href=@{admin} class="nav-link px-2">Admin</a></li>
+      <li><a th:href=@{about} class="nav-link px-2">About</a></li>
+        </footer>
+    
+
+
+  
+  
+
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       
+</body>
+</html>
